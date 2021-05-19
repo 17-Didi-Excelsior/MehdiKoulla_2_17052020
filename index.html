@@ -10,20 +10,21 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
+        <div class="entete">
+            <img class="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia">
             <nav>
-                <ul>
+                <ul class="navigation">
+                    <!--Alignement horizontal de la liste via flexbox-->
                     <li><a href ="#">Hébergements</a></li>
                     <li><a href ="#">Activités</a></li>
-                    <li><a href ="#">S'inscrire</a></li>
+                    <li class="inscrire"><a href ="#">S'inscrire</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <p>Trouvez votre hébergement pour des vacances de rêve</p>
+        <p class="trouvez">Trouvez votre hébergement pour des vacances de rêve</p>
         <p>En plein centre ville ou en pleine nature</p>
         <div>
         </div>
@@ -32,46 +33,98 @@
                 <label for="pseudo"><i class="fas fa-map-marker-alt"></i>
                 </label>
                 <input type="search" name="pseudo" id="pseudo" value="Marseille,France">
-                <button type="submit">Rechercher</button>
+                <button class="button_search" type="submit">Rechercher</button>
             </p>
         </form>
-        <ul>
-            <li>Filtres</li>
-            <li>Economique</li>
-            <li>Familial</li>
-            <li>Romantique</li>
-            <li>Animaux autorisés</li>
-        </ul>
-        <i class="fas fa-info">Plus de 5OO logements sont disponibles dans cette ville</i>
+        <div class="filtres">
+            <!--Alignement horizontal des filtres via flexbox-->
+            <div>
+                <p>Filtres</p>
+            </div>
+            <div>
+                <button class="fas fa-money-bill-wave">Economique</button>
+            </div>
+            <div>
+                <button class="fas fa-child">Familial</button>
+            </div>
+            <div>
+                <button class="fas fa-heart">Romantique</button>
+            </div>
+            <div>
+                <button class="fas fa-dog">Animaux autorisés</button>
+            </div>
+        </div>
+        <p><i class="fas fa-info"></i>Plus de 5OO logements sont disponibles dans cette ville</p>
     
-        <div>
+        <section>
             <p>Hébergements à Marseille</p>
-            <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannbière">
-            <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
-            <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
-            <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
-            <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-            <img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
-        </div>
-        <div>
-            <p>Les plus populaires</p>
-            <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-            <img src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau. Chambres d'hôtes">
-            <img src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
-        </div>
-        <div>
+            <div class="container_hebergement">
+                <!--Utilisation de display-grid-->
+                <div>
+                    <img class="cannebiere" src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                </div>
+                <div>
+                    <img class="hotel_du_port" src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                </div>
+                <div>
+                    <img class="hotel_les_mouettes" src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                </div>
+                <div>
+                    <img class="hotel_de_la_mer" src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                </div>
+                <div>
+                    <img class="auberge_le_panier" src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                </div>
+                <div>
+                    <img class="hotel_chez_amina" src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                </div>
+            </div>
+            <p>Afficher plus</p>
+        </section>
+        <section>
+            <p>Les plus populaires<i class="fas fa-chart-line"></i></p>
+            <div class="container_populaires">
+            <!--Utilisation de flexbox-->
+                <div class="populaires">
+                    <img class="images_populaires" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                </div>
+                <div class="populaires">
+                    <img class="images_populaires" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau. Chambres d'hôtes">
+                </div>
+                <div class="populaires">
+                    <img class="images_populaires" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                </div>
+            </div>    
+        </section>
+        
+        <section>
             <p>Activités à Marseille</p>
-            <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-            <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-            <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-            <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-            <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-            <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-        </div>
+            <div class="container_activite">
+                <div class="image_vieux_port">
+                    <img class="image_vieux_port"src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                </div>
+                <div class="image_pomegues">
+                    <img class="image_pomegues" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                </div>
+                <div class="image_frioul">
+                    <img class="image_frioul" src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                </div>
+                <div class="image_calanques">
+                    <img class="image_calanques" src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                </div>
+                <div class="image_notre-dame-garde">
+                    <img class="image_notre-dame-garde" src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                </div>
+                <div class="image_longchamp">
+                    <img class="image_longchamp" src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container_footer">
+            <!--Utilisation de flexbox pour aligner les 3 blocs du footer-->
             <div>
                 <p>A propos</p>
                 <p>Fonctionnement du site</p>
