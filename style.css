@@ -6,6 +6,8 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+/* Partie Header */
+
 header{
     margin-left: 50px;
 }
@@ -17,19 +19,17 @@ main{
 .entete{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
     height:60px;
-    width: 95px;
-    margin-top: 30px;
 }
 
 .navigation{
     list-style: none;
     display: flex;
     justify-content: flex-start;
-    margin-top: 50px;
 }
 
 a{
@@ -40,27 +40,63 @@ li{
     margin-right: 69px;
 }
 
+.nav_hebergement{
+    text-decoration: none;
+}
 
-.inscrire{
+.nav_hebergement:hover{
+border-top: 1px solid #0065fc;
+padding-top: 20px;
+}
+
+.nav_activite{
+    color:#101010;
+    text-decoration: none;
+}
+
+.nav_inscrire{
     font-weight:bold;
     margin-right: 6px;
     /* margin-right de 77px sur la maquette donc on rajoute 6px aux 69px des li*/
+    text-decoration: none;
 }
+
+/* Partie Main */
 
 .trouvez{
     font-weight: bold;
     margin-top: 50px;
 }
 
-.button_search{
-    font-weight: bold;
-    background-color:  rgb(0, 101, 252);
+.light{
+    font-weight: lighter;
 }
 
-.filtres{
+#container_filtre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtre{
     list-style: none;
-    display:flex;
-    justify-content: flex-start;
+    border: 1px solid blue;
+    border-radius: 15px;
+    margin-top: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 9px;
+    padding-left: 1px;
+}
+.icon_filtre{
+    background-color: rgb(128, 95, 95);
+    padding: 12px 10px;
+    border-radius: 20px 0 0 20px;
+}
+
+.bouton_filtre{
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    border:none
 }
 
 .fa-money-bill-wave{
@@ -69,9 +105,19 @@ li{
 
 .fa-info{
     color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    padding: 7px 7px 7px 7px;
+    margin-right: 15px;
 }
 
-.container_hebergement{
+#container_section{
+    display: flex;
+    flex-direction: row;
+}
+
+#container_hebergement{
     display:grid;
     width: 870px;
     height: 430px;
@@ -140,29 +186,44 @@ li{
     height: 194px;
 }
 
-.container_populaires{
+#container_populaire{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 420px;
+    width: 100%;
     height: 625px;
     background-color: #f2f2f2;
 }
 
-.populaires{
-    background-image: url("images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+#soleil_du_matin{
+    position: relative;
+    background-image: url("./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     background-size: 100% auto;
     background-position: center center;
     width: 40%;
-    height: 134px;
+}
+#coeur_eau{
+    position: relative;
+    background-image: url("./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: 100% auto;
+    background-position:center center;
+    width: 40%;
+}
+#bleu_et_blanc{
+    position: relative;
+    background-image: url("./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: 100% auto;
+    background-position:center center;
+    width: 40%;
+
 }
 
-.images_populaires{
+.image_populaire{
     width: 100%;
     height: 134PX;
 }
 
-.container_activite{
+#container_activite{
     width: 100%;
     height: 446px;
     display:grid;
@@ -170,73 +231,98 @@ li{
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-.image_vieux_port{
+#image_vieux_port{
     grid-column: 1/2;
     grid-row: 1/6;
     background-image: url("images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: 100% auto; 
-    background-position: center center;
-    height: 445px;
-    width: 100%;
 }
 
-.image_pomegues{
+#image_pomegues{
   grid-column: 2/3;
   grid-row: 1/4;
   background-image: url("images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
   background-size: 100% auto;
-  background-position: center center;
-  height: 235px;
-  width: 100%;
+  background-repeat: no-repeat;
 }
 
-.image_frioul{
+#image_frioul{
     grid-column: 2/3;
     grid-row: 4/6;
     background-image: url("images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: 100% auto;
-    background-position: center center;
-    height: 135px;
-    width:100%
+    background-repeat: no-repeat;
 }
 
-.image_calanques{
+#image_calanques{
     grid-column: 3/4;
     grid-row: 1/6;
     background-image: url("images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: 100% auto;
-    background-position: center center;
-    height: 445px;
-    width: 100%;
 }
 
-.image_notre-dame-garde{
+#image_notre-dame-garde{
     grid-column: 4/5;
     grid-row: 1/3;
     background-image: url("images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: 100% auto;
-    background-position: center center;
-    height: 195px;
-    width: 100%;
+    background-repeat: no-repeat;
 }
 
-.image_longchamp{
+#image_longchamp{
     grid-column: 4/5;
     grid-row: 3/6;
     background-image: url("images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: 100% auto;
+}
+
+.images_activite{
+    background-size: auto 100%;
     background-position: center center;
-    height: 210px;
+    height: 100%;
     width: 100%;
 }
+
+/* Partie Position Relative/Absolute*/
+
+.gras_banniere{
+    font-weight: bold;
+}
+
+/* Hébergements*/
+.hebergement_absolute{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Populaires*/
+.populaire_absolute{
+    position: absolute;
+    right:0;
+    width: 205px;
+    height: 134px;
+    background-color: #fff;
+}
+
+
+/* Partie footer */
 
 footer{
     margin-left: 0%;
     margin-right: 0%;
+    background-color: #f2f2f2;
 }
 
 .container_footer{
     display: flex;
-    justify-content: flex-start;
-    background-color: #f2f2f2;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 0 50px;
+    height: 220px;
+}
+
+
+.titre_footer{
+    font-weight: bold;
+}
+
+.footer1{
+    margin-top:18px;
 }
