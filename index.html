@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7027649ee7.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
@@ -27,20 +29,37 @@
         <p class="trouvez">Trouvez votre hébergement pour des vacances de rêve</p>
         <p class="light">En plein centre ville ou en pleine nature</p>
         <form  method="post" action="Recherche">
-            <div>
-                <label for="pseudo"><i class="fas fa-map-marker-alt fa-lg"></i>
+            <div class="parent_searchbar">
+                <label for="pseudo">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
                 </label>
                 <input class="searchbar" type="search" name="pseudo" id="pseudo" value="Marseille,France">
                 <button class="button_search" type="submit">Rechercher</button>
             </div>    
         </form>
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+         </div>
         <div id="container_filtre">
             <!--Alignement horizontal des filtres via flexbox-->
             <p>Filtres</p>
-            <p class="filtre"><i class="fas fa-money-bill-wave icone_filtre fa-2x"></i>Économique</p>
-            <p class="filtre"><i class="fas fa-child icone_filtre fa-2x"></i>Familial</p>
-            <p class="filtre"><i class="fas fa-heart icone_filtre fa-2x"></i>Romantique</p>
-            <p class="filtre"><i class="fas fa-dog icone_filtre fa-2x"></i>Animaux autorisés</p>
+            <p class="filtre">
+                <i class="fas fa-money-bill-wave icone_filtre fa-lg"></i>Économique
+            </p>
+            <p class="filtre">
+                <i class="fas fa-child icone_filtre fa-lg"></i>Familial
+            </p>
+            <p class="filtre">
+                <i class="fas fa-heart icone_filtre fa-lg"></i>Romantique
+            </p>
+            <p class="filtre">
+                <i class="fas fa-dog icone_filtre fa-lg"></i>Animaux autorisés
+            </p>
         </div>
         <p class="light"><i class="fas fa-info"></i>Plus de 5OO logements sont disponibles dans cette ville</p>
     <div id="alignement_section">
@@ -342,7 +361,7 @@
                     <div id="pomegues">
                         <a  href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
                             <img class="img_pomegues" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                            <div class="activite_absolute">
+                            <div class="pom">
                                 <p class="titre_banniere">Fort de Pomègues</p>
                             </div>
                         </a>
