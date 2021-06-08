@@ -167,6 +167,21 @@ form>div>*{
     position: relative;
 }
 
+form>div>label>.fa-lg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_contour{
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
 .button_search{
     background-color: #0065fc;
     color:#fff;
@@ -176,14 +191,6 @@ form>div>*{
     position: absolute;
 }
 
-/*
-.search{
-    position: relative;
-}
-.search>button{
-    position: absolute;
-}
-*/
 #container_filtre{
     display: flex;
     align-items: center;
