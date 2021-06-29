@@ -1,0 +1,63 @@
+#section_populaire{
+    width: calc(33.33% - 100px);  /*Taille de 417px sur 1340px convertie en pourcentage */
+    height: 627px;
+    background-color: #f2f2f2;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+.image_populaire{
+    width: 50%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+/* Populaires */
+.populaire_star{
+    width: 50%;
+    /*height: 134px;*/
+    background-color: #fff;
+    float: right;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} 
+
+.titre_banniere_populaire{
+    color:#000000;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.texte_banniere_populaire{
+    color:#000000;
+    padding-left: 20px;
+}
+
+.align_star{
+    padding-left: 20px;
+}
+
+.etoile_bleue_populaire{
+    color:#0065fc;
+}
+.etoile_grise_populaire{
+    color:#d9d9d9;
+}
+
+#container_populaire{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    width: 100%;
+    height: 505px;
+}
+
+.case2{
+    border: 5px  #fff solid;
+    border-radius: 20px;   
+    box-shadow: 1px 5px 10px #e4e4e4;
+}

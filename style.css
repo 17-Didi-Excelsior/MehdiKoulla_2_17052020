@@ -13,99 +13,6 @@ a{
     color:#101010;
 }
 
-#case1 {
-    background-color: #FFF;
-    border-radius: 20px;
-    padding: 5px;
-    height: 200px;
-
-}
-
-div#ancre_hebergement {
-    padding-left: 50px;
-}
-
-#container_hebergement {
-    margin: 0px;
-    display: grid;
-    grid-template-columns: repeat(3, calc(33.33% - 50px) );
-    grid-template-rows: repeat( 2, 1fr);
-    grid-gap: 50px;
-    width: 100%;
-}
-
-@media (max-width:800px) { /* hi-res laptops and desktops */
-
-div#ancre_hebergement > div#container_hebergement {
-    margin: 0px;
-    display: grid;
-    grid-template-columns: repeat(2, calc(50% - 50px) );
-    grid-template-rows: repeat( 3, 1fr);
-    grid-gap: 50px;
-}
-
-}
-
-.imgage_hebergement {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
-
-/* Partie populaire */
-
-#section_populaire{
-    width: calc(33.33% - 100px);  /*Taille de 417px sur 1340px convertie en pourcentage */
-    height: 627px;
-    background-color: #f2f2f2;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 20px;
-}
-.image_populaire{
-    width: 50%;
-    height: 135px;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-    
-}
-
-/* Populaires */
-.populaire_star{
-    width: 50%;
-    /*height: 134px;*/
-    background-color: #fff;
-    float: right;
-    height: 140px;
-} 
-
-#container_populaire{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-around;
-    width: 100%;
-    height: 505px;
-}
-
-.case2{
-    border: 5px  #fff solid;
-    border-radius: 20px;   
-}
-
-/* TEMP */
-
-*{
-    margin:0;
-}
-
-body{
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Partie Header */
-
 header{
     margin: 50px 50px 0px 50px;
 }
@@ -126,11 +33,11 @@ main{
 
 .navigation{
     list-style: none;
-    display: flex;
 }
 
 li{
     margin-left: 69px;
+    display: inline;
 }
 
 .nav_hebergement{
@@ -147,7 +54,17 @@ padding-top: 50px;
     color:#101010;
     text-decoration: none;
 }
+/*
+nav > h3 {
+    margin: 10px;
+    order: 3;
+}
 
+nav {
+    display: flex;
+    align-items: baseline;
+}
+*/
 .nav_inscrire{
     font-weight:bold;
     margin-right: 6px;
@@ -199,6 +116,8 @@ form>div>label>.fa-lg{
     border: 1px solid #f2f2f2;
     height: 50px;
     width: 16.18%; /* 233px sur 1440px  */
+    font-size: 16px;
+    padding-left: 17px;
 }
 
 .button_search{
@@ -209,8 +128,17 @@ form>div>label>.fa-lg{
     border-bottom-right-radius: 15px;
     border:none;
     position: absolute;
+    font-size: 16px;
+    padding: 0 17px 0 17px;
 }
 
+#btnmob {
+    display: none;
+}
+
+.filtres_mobile{
+    display: none;
+}
 #container_filtre{
     display: flex;
     align-items: center;
@@ -231,11 +159,13 @@ form>div>label>.fa-lg{
     border-radius: 35px;
     margin-top: 0px;
     margin-left: 25px;
-    padding-right: 9px;
+    /*padding-right: 9px; Utilisation des entités HTML à la place des paddings*/
     padding-left: 1px;
     display: flex;
     align-items: center;
-    font-weight: bold;
+}
+.filtre:hover{
+    background-color: #F2F2F2;
 }
 
 .bouton_filtre{
@@ -250,6 +180,11 @@ form>div>label>.fa-lg{
     border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+
+.icone_filtre:hover{
+    background-color:#0065fc;
+    color:rgb(222, 235, 255);
 }
 
 #container_filtre>.filtre>.fa-lg{
@@ -278,139 +213,6 @@ form>div>label>.fa-lg{
     justify-content: space-between;
 }
 
-#section_hebergement{
-    width: calc(66.66% - 50px) /* Taille de 880px sur 1340px convertie en pourcentage*/;
-    height: 627px;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    margin-bottom: 70px;
-}
-
-.titre_section_hebergement_et_populaire{
-    margin:50px 0 30px 0;
-    font-weight:bold ;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; /* Pour aligner le symbole car léger décalage en hauteur pour ce dernier */
-}
-
-.marge_basse{
-    margin-left: 30px;
-    margin-top: 45px;
-}
-
-#ancre_activite>h3{
-    margin-bottom: 25px;
-}
-
-#container_activite{
-    width: 100%;
-    height: 445px;
-    display: grid;    
-    grid-template-columns: 21.43% 21.43% 21.43% 21.43%;
-    grid-template-rows: 195px 40px 5px 40px 165px;
-    /* 195 235 240 280 445 */
-    /* 195  40   5  40 165 */
-    grid-gap: 0px 40px;
-    
-}
-
-.label_activites {
-   margin: 15px 0 0 20px;
-}
-
-/*Positions des images avec background-position : center, background-size : cover et object-fit : cover*/
-
-.img_activite{
-    background-color: #fff;
-    box-shadow: 1px 1px 12px #cac2c2;
-}
-
-#vieux_port {
-    width: 100%;
-    grid-row: 1/6;
-    grid-column: 1/2;
-    border-radius: 20px;
-    
-}
-
-#img_vieux_port {
-    width: 100%;
-    height: calc(445px - 55px);
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-}
-
-#pomegues{
-    /* 240px - 1/4 */
-    width: 100%;
-    grid-column: 2/3;
-    grid-row: 1/4;
-    border-radius: 20px;
-}
-
-#img_pomegues {
-    width: 100%;
-    height: calc(240px - 55px);
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-}
-
-#frioul{
-    width: 100%;
-    grid-column: 2/3;
-    grid-row: 5/6;
-    border-radius: 20px;
-}
-
-#img_frioul{
-    width: 100%;
-    height: calc(165px - 55px);
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-}
-
-#calanques{  
-    width: 100%;
-    grid-row: 1/6;
-    grid-column: 3/4;
-    border-radius: 20px;
-}
-
-#img_calanques{
-    width: 100%;
-    height: calc(445px - 55px);
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-}
-
-#garde{
-    width: 100%;
-    grid-row: 1/2;
-    grid-column: 4/5;
-    border-radius: 20px;
-}
-
-#img_garde{
-    width: 100%;
-    height: calc(195px - 55px);
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-}
-
-#longchamp{
-    width: 100%;
-    grid-row: 3/6;
-    grid-column: 4/5;
-    border-radius: 20px;
-}
-
-#img_longchamp{
-    width: 100%;
-    height: calc(210px - 55px);
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-}
 /*
     display:grid;
     
@@ -467,20 +269,4 @@ footer{
 
 .footer2{
     margin-right: 290px; /* Calculé à partir du s de hébergements*/
-}
-
-/* Media queries */
-@media screen and (max-width:1024px){
-    #container_filtre{
-        display: flex;
-        flex-direction: column;
-    }
-    .container_footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .navigation{
-        flex-wrap: wrap;
-    }
-
 }

@@ -1,0 +1,142 @@
+
+
+@media only screen and (max-width: 480px) {
+    nav {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav > ul > li {
+        flex: 1;
+        text-align: center;
+    }
+    .entete {
+        display: block;
+    }
+    nav > h3 {
+        text-align: end;
+    }
+    .logo {
+        position: absolute;
+
+    }
+
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .searchbar{
+        width: auto;
+    }
+    .filtres_mobile{
+        display: inline;
+        /*margin-bottom: 20px; Ne fonctionne pas. Pourquoi?*/
+    }
+    #container_filtre{
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .filtre1{
+        display: none;
+    }
+    .filtre{
+        margin-left: 0;
+    }
+    .light{
+        margin-bottom: 40px;
+    }
+    .fa-info{
+        margin-bottom: 0;
+    }
+    #alignement_section{
+        flex-direction: column-reverse;
+    }
+
+    #btndesk {
+        display: none;
+    }
+    #btnmob {
+        display: inline;
+    }
+
+    /* Partie populaire */
+
+    #section_populaire{
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Partie hébergement */ 
+
+    #section_hebergement{
+        width: auto;
+        height: auto;
+        background-color:#ffffff;
+    }
+    div#ancre_hebergement{
+        padding-left: 0;
+    }
+
+    #container_hebergement{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Partie activité*/
+    #ancre_activite>h2{
+        margin-bottom: 25px;
+    }
+    
+    #container_activite{
+        grid-template-rows: repeat(6, 190px);
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+        height: auto;
+    }
+
+    #img_vieux_port, #img_pomegues,  #img_frioul, #img_calanques, #img_garde, #img_longchamp{
+        height: calc(190px - 55px);
+    }
+
+    #vieux_port {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    #pomegues{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #frioul{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    #calanques{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    
+    #garde{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    
+    #longchamp{
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+
+    .container_footer {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+}
