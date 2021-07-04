@@ -1,33 +1,58 @@
 
 
 @media only screen and (max-width: 480px) {
-    nav {
-        display: block;
+    header {
+        margin: 50px 20px 0px 20px;
     }
-    .navigation {
-        display: flex;
+    .entete{
         flex-wrap: wrap;
     }
-    nav > ul > li {
-        flex: 1;
-        text-align: center;
+    .entete>nav>h3{
+        display: none;
     }
-    .entete {
-        display: block;
+    .inscrire_mobile{
+        display: flex;
     }
-    nav > h3 {
-        text-align: end;
+    .navigation {
+        padding-top: 36px;
+        /* width: 100%; */
+        display: grid;/* Passage au grid pour les traits sous hébergement et activité*/
+        grid-auto-columns: 50% 50%;
+        grid-template-rows: 100%;
     }
-    .logo {
-        position: absolute;
-
+    .li_nav_hebergement{
+        margin-left: -20px;
+        margin-right: -20px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-bottom: 3px #0065fc solid;
+        padding-bottom: 20px;
+        width: 238px /* 186(taille maquette) + 20 du margin-left(-20)*/;
     }
-
+    .nav_hebergement{
+        margin-left: 40px/* 20(taille maquette) + 20 du margin-left(-20)*/;
+    }
+    .nav_hebergement:hover{
+        border-top: none;
+    }
+    .li_nav_activite{
+        margin-left: 0;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-bottom: 3px #f2f2f2 solid;
+        width: 238px;
+    }
+    .nav_activite{
+        margin-left: 60px;
+    }
     main{
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 40px;
     }
-
+    .trouvez{
+        margin-top: 40px;
+    }
     .searchbar{
         width: auto;
     }
@@ -52,6 +77,8 @@
     .fa-info{
         margin-bottom: 0;
     }
+
+
     #alignement_section{
         flex-direction: column-reverse;
     }
@@ -67,8 +94,11 @@
 
     #section_populaire{
         width: auto;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin:0 -20px 0 -20px;/* En rapport aux 20px du main*/
+        border-radius: 0;
+        height: 650px;
     }
 
     /* Partie hébergement */ 
@@ -91,7 +121,7 @@
     #ancre_activite>h2{
         margin-bottom: 25px;
     }
-    
+
     #container_activite{
         grid-template-rows: repeat(6, 190px);
         grid-template-columns: 100%;
@@ -137,6 +167,13 @@
         flex-direction: column;
         height: auto;
         padding-bottom: 50px;
+        margin-left: 20px;
+    }
+    .footer1{
+        margin-right:0;
+    }
+    .footer2{
+        margin-right: 0;
     }
 
 }

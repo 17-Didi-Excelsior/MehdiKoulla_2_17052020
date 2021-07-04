@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="activite.css">
     <link rel="stylesheet" href="tablette.css">
     <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="navigation.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7027649ee7.js" crossorigin="anonymous"></script>
@@ -19,13 +20,14 @@
     <header>
         <div class="entete">
             <img class="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia">
+            <h3 class="inscrire_mobile"><a class="nav_inscrire" href ="#">S'inscrire</a></h3>
             <nav>
-                <h3><a class="nav_inscrire" href ="#">S'inscrire</a></h3>
                 <ul class="navigation">
                     <!--Alignement horizontal de la liste via flexbox-->
                     <li class="li_nav_hebergement"><a class="nav_hebergement" href ="#ancre_hebergement">Hébergements</a></li>
-                    <li ><a class="nav_activite" href ="#ancre_activite">Activités</a></li>
+                    <li class="li_nav_activite"><a class="nav_activite" href ="#ancre_activite">Activités</a></li>   
                 </ul>
+                <h3><a class="nav_inscrire" href ="#">S'inscrire</a></h3>
             </nav>
         </div>
     </header>
@@ -63,105 +65,105 @@
             </h4>
         </div>
         <p class="light"><i class="fas fa-info"></i>Plus de 5OO logements sont disponibles dans cette ville</p>
-    <div id="alignement_section">
-        <section id="section_hebergement">
-            <div id="ancre_hebergement">
-                <h2 class="titre_section_hebergement_et_populaire">Hébergements à Marseille</h2>
-                <div id="container_hebergement">
-                    <div id="case1">
-                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                            <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière à Marseille"
-                                 class="imgage_hebergement">
-                                    <p class="titre_banniere">Auberge la Cannebière</p>
-                                    <p>Nuit à partir de 25€</p>
+        <div id="alignement_section">
+            <section id="section_hebergement">
+                <div id="ancre_hebergement">
+                    <h2 class="titre_section_hebergement_et_populaire">Hébergements à Marseille</h2>
+                    <div id="container_hebergement">
+                        <div id="case1">
+                            <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                                <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière à Marseille"
+                                    class="imgage_hebergement">
+                                        <p class="titre_banniere">Auberge la Cannebière</p>
+                                        <p>Nuit à partir de 25€</p>
+                                        <div>
+                                            <i class="fas fa-star etoile_bleue"></i>
+                                            <i class="fas fa-star etoile_bleue"></i>
+                                            <i class="fas fa-star etoile_bleue"></i>
+                                            <i class="fas fa-star etoile_bleue"></i>
+                                            <i class="fas fa-star etoile_grise"></i>
+                                        </div>    
+                            </a>
+                        </div>
+                        <div id="case1">
+                            <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                                <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port à Marseille"
+                                     class="imgage_hebergement">
+                                    <p class="titre_banniere">Hôtel du port</p>
+                                    <p>A partir de 52€</p>
                                     <div>
                                         <i class="fas fa-star etoile_bleue"></i>
                                         <i class="fas fa-star etoile_bleue"></i>
                                         <i class="fas fa-star etoile_bleue"></i>
                                         <i class="fas fa-star etoile_bleue"></i>
-                                        <i class="fas fa-star etoile_grise"></i>
-                                    </div>    
-                        </a>
+                                        <i class="fas fa-star etoile_bleue"></i>
+                                    </div>
+                            </a>
+                        </div>
+                        <div id="case1">
+                            <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                                <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes à Marseille"
+                                     class="imgage_hebergement">
+                                <p class="titre_banniere">Hôtel Les mouettes</p>
+                                <p>Nuit à partir de 76€</p>
+                                <div>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_grise"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="case1">
+                            <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                                <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer à Marseille"
+                                     class="imgage_hebergement">
+                                <p class="titre_banniere">Hôtel de la mer</p>
+                                <p>A partir de 46€</p>
+                                <div>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_grise"></i>
+                                    <i class="fas fa-star etoile_grise"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="case1">
+                            <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                                <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier à Marseille"
+                                     class="imgage_hebergement">
+                                <p class="titre_banniere">Auberge Le Panier</p>
+                                <p>A partir de 23€</p>
+                                <div>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_grise"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="case1">
+                            <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                                <img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina à Marseille"
+                                     class="imgage_hebergement">
+                                <p class="titre_banniere">Hôtel chez Amina</p>
+                                <p>A partir de 96€</p>
+                                <div>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                    <i class="fas fa-star etoile_bleue"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div id="case1">
-                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                            <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port à Marseille"
-                                 class="imgage_hebergement">
-                            <p class="titre_banniere">Hôtel du port</p>
-                            <p>A partir de 52€</p>
-                            <div>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div id="case1">
-                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                            <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes à Marseille"
-                                 class="imgage_hebergement">
-                            <p class="titre_banniere">Hôtel Les mouettes</p>
-                            <p>Nuit à partir de 76€</p>
-                            <div>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_grise"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div id="case1">
-                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                            <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer à Marseille"
-                                 class="imgage_hebergement">
-                            <p class="titre_banniere">Hôtel de la mer</p>
-                            <p>A partir de 46€</p>
-                            <div>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_grise"></i>
-                                <i class="fas fa-star etoile_grise"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div id="case1">
-                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                            <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier à Marseille"
-                                 class="imgage_hebergement">
-                            <p class="titre_banniere">Auberge Le Panier</p>
-                            <p>A partir de 23€</p>
-                            <div>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_grise"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div id="case1">
-                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                            <img src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina à Marseille"
-                                 class="imgage_hebergement">
-                            <p class="titre_banniere">Hôtel chez Amina</p>
-                            <p>A partir de 96€</p>
-                            <div>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                                <i class="fas fa-star etoile_bleue"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <h3 class="marge_basse">Afficher plus</h3>
-            </div>   
-        </section>
+                    <h3 class="marge_basse">Afficher plus</h3>
+                </div>   
+            </section>
 
             <section id="section_populaire">
                 <h2 class="titre_section_hebergement_et_populaire">Les plus populaires<i class="fas fa-chart-line"></i></h2>
@@ -191,7 +193,7 @@
                         <div class="populaire_star">
                                 <p class="titre_banniere_populaire">Hôtel Le soleil du matin</p>
                                 <p class="texte_banniere_populaire">Nuit à partir de 128€</p>
-                            <div class="align_star">
+                            <div class="align_star_populaire">
                                 <i class="fas fa-star etoile_bleue"></i>
                                 <i class="fas fa-star etoile_bleue"></i>
                                 <i class="fas fa-star etoile_bleue"></i>
@@ -220,62 +222,55 @@
                 </div>
                  </div>
             </section>        
-    </div>    
+        </div>    
 
-    <section id="ancre_activite">
-        <h2>Activités à Marseille</h2>
-        <div id="container_activite">
-
-            <div id="vieux_port" class="img_activite">
-                <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                    <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activités au Vieux port"
-                        id="img_vieux_port">
-                    <h4 class="label_activites">Vieux port</h4>
-                </a>
-            </div>
-
-            <div id="pomegues" class="img_activite">
-                <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                    <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activités au Fort de Pomègues"
-                        id="img_pomegues">
-                    <h4 class="label_activites">Fort de Pomègues</h4>
-                </a>
-            </div>
-
-            <div id="frioul" class="img_activite">
-                <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                    <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activités aux ïles du Frioul"
-                        id="img_frioul">
-                    <h4 class="label_activites">Îles du Frioul</h4>
-                </a>
-            </div>
-
-            <div id="calanques" class="img_activite">
-                <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                    <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activités au Parc National des Calanques"
-                        id="img_calanques">
-                    <h4 class="label_activites">Parc National des Calanques</h4>
-                </a>
-            </div>
-
-            <div id="garde" class="img_activite">
-                <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                    <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activités à Notre-Dame-de-la-Garde"
-                        id="img_garde">
-                    <h4 class="label_activites">Notre-Dame-de-la-Garde</h4>
-                </a>
-            </div>
-
-            <div id="longchamp" class="img_activite">
-                <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
-                    <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activités au Parc Longchamp"
-                        id="img_longchamp">
-                    <h4 class="label_activites">Parc Longchamp</h4>
-                </a>
-            </div>
-
-        </div>
-    </section>
+            <section id="ancre_activite">
+                <h2>Activités à Marseille</h2>
+                <div id="container_activite">
+                    <div id="vieux_port" class="img_activite">
+                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                            <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activités au Vieux port"
+                                id="img_vieux_port">
+                            <h4 class="label_activites">Vieux port</h4>
+                        </a>
+                    </div>
+                    <div id="pomegues" class="img_activite">
+                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                            <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activités au Fort de Pomègues"
+                            id="img_pomegues">
+                            <h4 class="label_activites">Fort de Pomègues</h4>
+                        </a>
+                    </div>
+                    <div id="frioul" class="img_activite">
+                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                            <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activités aux ïles du Frioul"
+                            id="img_frioul">
+                            <h4 class="label_activites">Îles du Frioul</h4>
+                        </a>
+                    </div>
+                    <div id="calanques" class="img_activite">
+                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                            <img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activités au Parc National des Calanques"
+                            id="img_calanques">
+                            <h4 class="label_activites">Parc National des Calanques</h4>
+                        </a>
+                    </div>
+                    <div id="garde" class="img_activite">
+                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                            <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activités à Notre-Dame-de-la-Garde"
+                            id="img_garde">
+                            <h4 class="label_activites">Notre-Dame-de-la-Garde</h4>
+                        </a>
+                    </div>
+                    <div id="longchamp" class="img_activite">
+                        <a href="https://www.google.fr/maps/@48.889856,2.326528,14z" target="_blank">
+                            <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activités au Parc Longchamp"
+                            id="img_longchamp">
+                            <h4 class="label_activites">Parc Longchamp</h4>
+                        </a>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <footer>

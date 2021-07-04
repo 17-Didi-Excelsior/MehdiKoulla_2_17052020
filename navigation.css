@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) and (max-width: 1339px){
+    #alignement_section{
+        display: inline;
+    }
+    #section_hebergement{
+        width: auto;
+    }
+    div#ancre_hebergement{
+        padding-top: 10px;
+    }
+    .titre_section_hebergement_et_populaire{
+        margin-top: 20px;
+    }
+    #section_populaire{
+        width: 80%;
+        padding-top: 10px;
+    }
+    #ancre_activite{
+        margin-top: 30px;
+    }
+    #container_activite{
+        display: inline;
+    }
+    .img_activite{
+        margin-bottom: 25px;
+    }
+    #vieux_port{
+        width: 80%;
+    }
+    #img_vieux_port{
+        height:calc(300px - 100px);
+    }
+    #pomegues{
+        width: 80%;
+    }
+    #img_pomegues{
+        height:calc(300px - 100px);
+    }
+    #frioul{
+        width: 80%;
+    }
+    #img_frioul{
+        height:calc(300px - 100px);
+    }
+    #calanques{
+        width: 80%;
+    }
+    #img_calanques{
+        height:calc(300px - 100px);
+    }
+    #garde{
+        width: 80%;
+    }
+    #img_garde{
+        height:calc(300px - 100px);
+    }
+    #longchamp{
+        width: 80%;
+    }
+    #img_longchamp{
+        height:calc(300px - 100px);
+    }
+    .container_footer{
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+        justify-content: space-between;
+    }
+    .footer1{
+        margin-right: 0;
+    }
+    .footer2{
+        margin-right: 0;
+    }
+}

@@ -23,13 +23,13 @@
     height: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 } 
 
 .titre_banniere_populaire{
     color:#000000;
     font-weight: bold;
     padding-left: 20px;
+    margin-bottom: 17px;
 }
 .texte_banniere_populaire{
     color:#000000;
@@ -38,6 +38,12 @@
 
 .align_star{
     padding-left: 20px;
+    padding-top: 45px;
+}
+
+.align_star_populaire{
+    padding-left: 17px;
+    padding-top: 25px;
 }
 
 .etoile_bleue_populaire{

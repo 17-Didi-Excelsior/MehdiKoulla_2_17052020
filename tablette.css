@@ -1,4 +1,5 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    
     .searchbar{
         width: auto;
     }
@@ -19,20 +20,80 @@
     #section_hebergement{
         background-color: #fff;
         margin-bottom: 0;
+        height: auto;
     }
     #container_hebergement{
-        grid-template-columns: repeat(3, calc(66.15% - 50px) );
+        grid-template-columns: repeat(2, calc(100% - 50px) );
     }
     div#ancre_hebergement {
         padding-left: 0;
     }
+    .marge_basse{
+        margin-bottom: 30px;
+    }
     #section_populaire{
-        width: calc(80% - 100px);
+        width: calc(100% - 100px);
+        height: auto;
+        padding-bottom: 50px;
+    }
+    #container_populaire{
+        height: auto;
+        gap:30px;
+    }
+    .case2{
+        height:200px;
+    }
+    .image_populaire{
+        height: 200px;
+    }
+    .populaire_star{
+        justify-content: space-between;
+        height: 200px;
+    }
+    .titre_banniere_populaire{
+        margin-bottom: 0;
+    }
+    .align_star{
+        padding-top: 0;
+    }
+    .align_star_populaire{
+        padding-top: 0;
     }
     #ancre_activite>h2 {
         margin: 25px 0 25px 0;
     }
-
+    #container_activite{
+        display: flex;
+        flex-wrap: wrap;
+        height:auto;
+    }
+    #img_vieux_port{
+        height: calc(240px - 55px);
+    }
+    #img_pomegues{
+        height: calc(240px - 55px);
+    }
+    #img_pomegues{
+        height: calc(240px - 55px);
+    }
+    #img_frioul{
+        height: calc(240px - 55px);
+    }
+    #img_calanques{
+        height: calc(240px - 55px);
+    }
+    #img_garde{
+        height: calc(240px - 55px);
+    }
+    #img_longchamp{
+        height: calc(240px - 55px);
+    }
+    .img_activite{
+        margin-bottom: 40px;
+    }
+    .label_activites{
+        margin-bottom: 25px;
+    }
     .container_footer{
         display: flex;
         justify-content: space-around;

@@ -21,6 +21,9 @@ main{
     margin: 50px 50px 0px 50px;
 }
 
+.inscrire_mobile{
+    display: none;
+}
 .entete{
     display: flex;
     align-items: center;
@@ -33,6 +36,7 @@ main{
 
 .navigation{
     list-style: none;
+    padding-left: 0;
 }
 
 li{
@@ -47,27 +51,23 @@ li{
 
 .nav_hebergement:hover{
 border-top: 2px solid #0065fc;
-padding-top: 50px;
+padding-top: 70px;
+width: 10px;
 }
 
 .nav_activite{
     color:#101010;
     text-decoration: none;
 }
-/*
-nav > h3 {
-    margin: 10px;
-    order: 3;
-}
 
 nav {
     display: flex;
     align-items: baseline;
 }
-*/
+
 .nav_inscrire{
     font-weight:bold;
-    margin-right: 6px;
+    margin-left: 70px;
     /* margin-right de 77px sur la maquette donc on rajoute 6px aux 69px des li*/
     text-decoration: none;
     color:#0065fc
@@ -115,7 +115,7 @@ form>div>label>.fa-lg{
     border-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     height: 50px;
-    width: 16.18%; /* 233px sur 1440px  */
+    width: 235px;
     font-size: 16px;
     padding-left: 17px;
 }
@@ -143,6 +143,8 @@ form>div>label>.fa-lg{
     display: flex;
     align-items: center;
     margin-bottom: 35px;/*Se mesure jusqu'au haut de la bulle du I*/
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .filtre1{
