@@ -1,5 +1,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    
+    .entete{
+        flex-direction: column;
+    }
     .searchbar{
         width: auto;
     }
@@ -47,7 +49,7 @@
         height: 200px;
     }
     .populaire_star{
-        justify-content: space-between;
+        justify-content: space-around;
         height: 200px;
     }
     .titre_banniere_populaire{
@@ -97,11 +99,19 @@
     .container_footer{
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
     }
     .footer1{
         margin-right: 0;
+        text-align: center;
     }
     .footer2{
         margin-right: 0;
+        text-align: center;
+    }
+    .footer3{
+        text-align: center;
     }
   }
